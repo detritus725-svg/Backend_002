@@ -6,4 +6,5 @@ const router = express.Router();
 
 router.route("/internships").post(createInternship).get(getAllInternships);
 
+
 export default router;
