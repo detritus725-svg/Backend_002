@@ -13,6 +13,16 @@ app.use(express.json({
     limit:"50kb"
 }));
 
+//import routes 
+import companyRoutes from "./routes/company.routes.js";
+
+
+//use routes
+app.use("/api/company",companyRoutes);
+
+
+
+
 connectDB()
 .then(() => {
     app.listen(process.env.PORT || 8000, () => {
@@ -22,5 +32,7 @@ connectDB()
 .catch((err) => {
     console.log("MONGO db connection failed !!! ", err);
 })
+
+
 
 

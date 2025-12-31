@@ -29,10 +29,7 @@ const companyProfileSchema = new Schema(
                 type: Schema.Types.ObjectId,
                 ref:"Internships"
             }
-        ],
-        
-
-        
+        ],  
     },
     {
         timestamps:true
