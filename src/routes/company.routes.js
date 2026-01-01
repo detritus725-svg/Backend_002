@@ -3,6 +3,17 @@ import { createInternship, getAllInternships } from "../controllers/internships.
 
 const router = express.Router();
 
+//public routes 
+router.route("/signup").post(registerCompany);
+router.route("/signin").post(loginCompany);
+
+
+
+
+
+
+
+
 
 router.route("/internships").post(createInternship).get(getAllInternships);
 
