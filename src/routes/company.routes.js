@@ -12,7 +12,7 @@ router.route("/signin").post(loginCompany);
 
 
 
-
+//protected routes
 
 
 router.route("/internships").post(createInternship).get(getAllInternships);
